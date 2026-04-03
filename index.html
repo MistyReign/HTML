@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
  <section>
     <nav>
-        <img src="./assets/FES.svg" alt="">
+        <img src="./assets/FES.svg" class="logo" alt="">
         <ul>
             <li><a href="about">About</a></li>
             <li><a href="discord">Discord</a></li>
@@ -17,60 +19,77 @@
         </ul>
     </nav>
     <header>
+        <div class="row">
         <div>
             <h1>Best place to learn Frontend</h1>
-                <p>Go from being an absolute beginner to Pro with a Simplified process</p>
+                <p class="subheader">Go from being an absolute beginner to Pro with a Simplified process</p>
                     <button>Start Now</button>
         </div>
         <figure>
           <img src="./assets/laptop.png" alt="Home page Image">
         </figure>
+        </div>
     </header>
  </section>
 
  <main>
-    <section> id="About"</section>
+    <section id="about">
       <h2>About</h2>
-      <div>
-        <p>This is a practice website. So thats all I'm writing for this about.</p>
-        <p>This is another paragraph thats going to make no sense to the about section because this is just practice.</p>
+      <div class="row">
+        <div class="section__description">
+        <div class="section__description--wrapper">
+         <p class="section__description--para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nobis explicabo, excepturi incidunt numquam aspernatur maxime facere illum sit accusantium rem tenetur doloribus accusamus neque. Voluptate consequatur ducimus quae autem.</p>        <p class="section__description--para">
+         <p class="section__description--para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolores nemo aliquid esse vero veniam similique enim velit? Accusamus nisi saepe optio temporibus doloremque eos, corrupti facilis illo ullam non.</p>      
       </div>
-      <figure>
+      <figure class="about__img--wrapper">
         <img src="./assets/about.jpg" alt="">
       </figure>
-    </section>
+     </div>
+    </div>
+ </section>
     
     
-    <section> id="Discord"</section>
-        <h2>Discord</h2>
-        <figure>
+    <section id="discord">
+      <h2>Discord</h2>
+      <div class="row">
+      <div class="section__description">
+      <figure class="about__img--wrapper"> 
         <img src="./assets/discord.png" alt="Discord">
-        </figure>
-        <div>
-            <p>More writing about this practice website. I'm in learning mode.</p>
-            <p>Another paragraph making no sense to this website. Still learning. Practice run.</p>
-        </div>
+      </figure>
+      <div class="section__description--wrapper">       
+        <p class="section__description--para">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt doloremque laborum quod sit provident distinctio voluptas harum id? Mollitia expedita accusantium, possimus asperiores nisi quaerat non labore vel cupiditate corrupti!
+        </p>
+        <p class="section__description--para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum sequi modi recusandae incidunt mollitia quo ipsam amet accusamus sapiente tenetur, omnis sit culpa praesentium unde perspiciatis voluptatum fugit porro odit.
+        </p>
+      </div>
+     </div>
+     </div>
     </section>
 
 
-    <section> id="Contact"
+    <section id="contact">
        <h2>Contact</h2>
        <form action="">
         <span>Email</span>
-        <input type="text"> placeholder="">
+        <input type="email" placeholder="">
         <span>Message</span>
-        <textarea type="text" placeholder="jane@example.com"></textarea>
+        <textarea type="text" placeholder="Cool Website, Lets get connected!"></textarea>
+        <button>Contact Us!</button>
        </form> 
     </section>
  </main>
 
  <footer>
-  <img src="./assets/FES.svg"  alt="">
-  <div>
-   <a href="About">About</a>
-   <a href="Discord">Discord</a>
-   <a href="Contact">Contact</a>
-   <a href="">Courses</a>
+  <img class="footer__logo" src="./assets/FES.svg"  alt="">
+  <div class="footer__links">
+    <a class="footer__link" href="About">About</a>
+    <a class="footer__link" href="Discord">Discord</a>
+    <a class="footer__link" href="Contact">Contact</a>
+    <a class="footer__link" href="">Courses</a>
   </div>
   <p>Copyright Frontend Simplified</p>
  </footer>
